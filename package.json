@@ -1,0 +1,50 @@
+{
+  "name": "eslint-config-inlucent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "airbnb",
+    "typescript",
+    "prettier"
+  ],
+  "scripts": {
+    "test": "eslint --ext .js,tsx,ts test/"
+  },
+  "repository": "https://github.com/danielkov/eslint-config-inlucent.git",
+  "author": "Daniel Emod Kovacs <emod.kovacs@doclerholding.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "4.15.0",
+    "@typescript-eslint/parser": "4.15.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.1.3",
+    "eslint-plugin-jest-dom": "3.6.5",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-testing-library": "3.10.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint --fix"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.1.0",
+    "@types/jest": "^26.0.14",
+    "@types/react": "^17.0.2",
+    "eslint": "^7.11.0",
+    "husky": "5.0.9",
+    "lint-staged": "10.5.4",
+    "prettier": "^2.1.2",
+    "react": "^17.0.1",
+    "typescript": "^4.0.3"
+  }
+}
