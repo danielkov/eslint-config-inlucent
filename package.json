@@ -9,7 +9,8 @@
     "prettier"
   ],
   "scripts": {
-    "test": "eslint --ext .js,tsx,ts test/"
+    "test": "eslint --ext .js,tsx,ts test/",
+    "release": "standard-version"
   },
   "repository": "https://github.com/danielkov/eslint-config-inlucent.git",
   "author": "Daniel Emod Kovacs <emod.kovacs@doclerholding.com>",
@@ -45,6 +46,7 @@
     "lint-staged": "10.5.4",
     "prettier": "^2.1.2",
     "react": "^17.0.1",
+    "standard-version": "9.1.0",
     "typescript": "^4.0.3"
   }
 }
