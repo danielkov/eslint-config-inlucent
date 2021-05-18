@@ -38,7 +38,7 @@
     "*.{js,ts,tsx}": "eslint --fix"
   },
   "devDependencies": {
-    "@testing-library/react": "^11.1.0",
+    "@testing-library/react": "11.2.7",
     "@types/jest": "^26.0.14",
     "@types/react": "^17.0.2",
     "eslint": "^7.11.0",
